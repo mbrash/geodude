@@ -24,7 +24,7 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <section id="main">
+    <section id="platform">
         <div class="container-fluid">
             <div class="row margin-none">
                 <div class="col-md-9">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-3">
                     <div id="chat-list" ng-controller="ChatCtrl as chat">
-                        <h1 class="text-center">Messages</h1>
+                        <h2 class="text-center">Messages</h2>
                         <form name="text-entry" ng-submit="chat.sendMsg()">
                             <input type="text" name="new-chat" placeholder="Say something" ng-model="chat.newMessage">
                         </form>

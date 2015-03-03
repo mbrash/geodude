@@ -43,6 +43,28 @@ body {
   color: #fff;
 }
 
+#platform {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+}
+
+#platform h2 {
+  display: block;
+  background: rgba( 0, 233, 255, 0.55);
+  border: none;
+  border-radius: 4px;
+  margin: 4em 0 0 0;
+  padding: 6px;
+  line-height: 56px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 54px;
+  color: #fff;
+}
+
 #chat-btn {
   display: block;
   margin-top: 2em;
