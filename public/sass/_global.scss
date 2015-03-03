@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+}
+
+
+#chat-list {
+	width: 40%;
+	height: 100%;
+	float: right;
+    h1 {
+        text-align: center;
+        // background: grey;
+        margin: 0;
+        padding: 10px;
+        border-bottom: 2px solid grey;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    input {
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+    img {
+        width: 70%;
+    }
+    form {
+        border: none;
+        input {
+        
+            margin: auto;
+            background: #333;
+            border: none;
+            border-bottom: 1px solid grey;
+        }
+    }
+
+}
+.chat {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px;
+    // border: thin solid black;
+}
+
