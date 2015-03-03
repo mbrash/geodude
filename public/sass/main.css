@@ -11,22 +11,60 @@ body {
 }
 
 #main {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  margin-top: -5.35em !important;
-}
-
-#main .container-fluid {
-  margin: 0 !important;
-  padding: 0 !important;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 #map {
   position: absolute;
-  top: 4.45em !important;
+  top: -2.5em;
   bottom: 0;
+  left: 0;
   height: 58em;
-  width: 100%; }
+  width: 100%;
+  z-index: -9999 !important;
+}
+
+#main h1 {
+  background: rgba( 0, 233, 255, 0.55);
+  border: none;
+  border-radius: 4px;
+  margin: 2em 0 0 0;
+  padding: 12px;
+  line-height: 72px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  color: #fff;
+}
+
+#chat-btn {
+  display: block;
+  margin-top: 2em;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  padding: 12px 18px;
+  background: rgba( 0,233,255,1.00);
+  color: #fff;
+  border-radius: 6px;
+  border: solid 3px rgba( 0,233,255,1.00);
+  text-decoration: none;
+  -webkit-transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -o-transition: background 0.25s ease-in-out;
+  transition: background 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+#chat-btn:hover {
+  color: rgba( 0,233,255,1.00);
+  background: transparent;
+}
 
 #chat-list {
   width: 100%;
@@ -38,7 +76,7 @@ body {
     font-weight: 300;
     font-size: 32px;
     text-align: center;
-    margin: 2em 0 0 0;
+    margin: 1em 0 0 0;
     padding: 10px;
     border-bottom: 2px solid grey; }
   #chat-list ul {
