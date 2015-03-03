@@ -26,10 +26,10 @@
     		<span class="content" href="#">User Name</span><br>
     	</div>
 
-    	<ul ng-repeat="chat in chat.data | reverse">
-    		<li class="chat">
-    			<span class="content" href="#" ng-bind="chat.content"></span><br>
-    			<span class="author" ng-bind="chat.author"></span>
+    	<ul class="timeline" ng-repeat="chat in chat.data | reverse">
+    		<li class="chat timeline-body">
+    			<span class="content timeline-content" href="#" ng-bind="chat.content"></span><br>
+    			<span class="author timeline-content" ng-bind="chat.author"></span>
     		</li>
     	</ul>
 

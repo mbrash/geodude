@@ -1,18 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300);
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial; }
+  font-family: 'Raleway', sans-serif; }
 
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
+  height: 58em;
   width: 60%; }
 
 #chat-list {
   width: 40%;
-  height: 100%;
-  float: right; }
+  height: 44em;
+  float: right;
+  overflow-y: scroll;
+}
   #chat-list h1 {
     text-align: center;
     margin: 0;
@@ -24,20 +29,86 @@ body {
   #chat-list input {
     font-size: 20px;
     padding: 10px;
-    width: 100%; }
+    width: 94%; }
   #chat-list img {
     width: 70%; }
   #chat-list form {
     border: none; }
     #chat-list form input {
       margin: auto;
-      background: #333;
+      background: #F5F5F5;
       border: none;
-      border-bottom: 1px solid grey; }
+      border-bottom: 1px solid grey;
+    }
+
+::-webkit-input-placeholder {
+  color: #626262;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #626262;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #626262;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+:-ms-input-placeholder {
+  color: #626262;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
 
 .chat {
   font-size: 20px;
   list-style-type: none;
   padding: 10px; }
+
+.timeline {
+  list-style: none;
+  margin-left: 2px;
+}
+
+.timeline li {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.timeline li span {
+  display: inline;
+}
+
+.timeline li .content {
+  font-weight: 300;
+  color: #fff;
+  float: left;
+  margin: 6px;
+  width: 40%;
+  background: rgba( 126, 189, 232, 1.00);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.timeline li .author {
+  font-weight: 300;
+  color: #fff;
+  float: right;
+  margin: 6px;
+  width: 80%;
+  background: #66FFCC;
+  padding: 8px;
+  border-radius: 8px;
+}
+
 
 /*# sourceMappingURL=main.css.map */
