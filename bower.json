@@ -1,0 +1,27 @@
+{
+  "name": "geodude",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mbrash/geodude",
+  "authors": [
+    "Christopher A. McElveen",
+    "Derick Warshaw",
+    "Michael Brash"
+  ],
+  "description": "Geo based Chat",
+  "main": "main.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.1",
+    "font-awesome": "~4.3.0"
+  }
+}
