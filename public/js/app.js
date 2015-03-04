@@ -49,9 +49,16 @@ app.controller('ChatCtrl', ['$http', '$scope',function($http, $scope) {
 
 
 
+
+
+
+
+
     var socket = io('http://localhost:3000');
         var msgs 
-        socket.on("33602", function(msg) {
+
+        
+        socket.on("msg", function(msg) {
             console.log("gots")
             dataInfo = msg
             self.data = msg
@@ -62,10 +69,8 @@ app.controller('ChatCtrl', ['$http', '$scope',function($http, $scope) {
         })
 
      
-        console.log("it ran tho")
         socket.on('connect', function(){
-            socket.emit("join", {"name":name, "lon":lon, "lat":lat});
-
+            socket.emit("join", {"name":name, "lon":lon, "lat":lat, "zip":"33602"});
             console.log("Client Connected")            
             
 
@@ -128,8 +133,8 @@ app.controller('ChatCtrl', ['$http', '$scope',function($http, $scope) {
 
     self.sendMsg = function() {
         // add new message to array
-        var newMsg = {"content":self.newMessage, "author": "You"};
-        socket.emit("33602", newMsg);
+        var newMsg = {"content":self.newMessage, "author": "You", "zip":"33602"};
+        socket.emit("msg", newMsg);
         console.log(self.data)
 
         // push message to database
