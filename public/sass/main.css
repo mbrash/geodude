@@ -6,8 +6,42 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-#top-nav .navbar-brand img {
-  width: 20%;
+#top-nav {
+  margin: 0;
+  height: 44px;
+  background: rgba( 255, 255, 255, 0.65);
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 4px rgba( 0, 233, 255, 0.65);
+  border-left: none;
+}
+
+#top-nav .nav a {
+  padding: 6px;
+  margin: 4px;
+  background: transparent;
+  color: rgba( 88, 88, 88, 1.00);
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+  border: solid 1px transparent;
+  -webkit-transition: border 0.25s ease-in-out;
+  -moz-transition: border 0.25s ease-in-out;
+  -o-transition: border 0.25s ease-in-out;
+  transition: border 0.25s ease-in-out;
+}
+
+#top-nav .nav a:hover {
+  color: rgba( 0, 233, 255, 1.00);
+  border: solid 1px rgba( 0, 233, 255, 1.00);
+}
+
+#top-nav .brand img {
+  margin-top: 6px;
+  margin-left: 12px;
+  width: 200px;
+  height: 30px;
 }
 
 #map {
@@ -15,18 +49,17 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  height: 62em;
+  height: 58em;
   width: 100%;
   z-index: -9999 !important;
 }
 
 #main {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   display: block;
-  z-index: 9999 !important;
 }
 
 #main h1 {
@@ -34,7 +67,7 @@ body {
   background: rgba( 0, 233, 255, 0.55);
   border: none;
   border-radius: 4px;
-  margin: 4em 0 0 0;
+  margin: 2em 0 0 0;
   padding: 12px;
   line-height: 72px;
   font-family: 'Raleway', sans-serif;
@@ -44,19 +77,16 @@ body {
 }
 
 #platform {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 0 !important;
+  left: 0 !important;
   width: 100%;
-  display: block;
 }
 
 #platform h2 {
-  display: block;
   background: rgba( 0, 233, 255, 0.55);
   border: none;
   border-radius: 4px;
-  margin: 4em 0 0 0;
   padding: 6px;
   line-height: 56px;
   font-family: 'Raleway', sans-serif;
@@ -95,36 +125,21 @@ body {
 #chat-list {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
 }
-  #chat-list h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 32px;
-    text-align: center;
-    margin: 1em 0 0 0;
-    padding: 10px;
-    border-bottom: 2px solid grey; }
-  #chat-list ul {
-    padding: 0;
-    margin: 0; }
-  #chat-list input {
-    font-size: 20px;
-    padding: 10px;
-    width: 100%;
-    border-radius: 6px;
-    border: solid 1px rgba( 0, 233, 255, 1.00);
-  }
-  #chat-list img {
-    width: 70%; }
-  #chat-list form {
-    border: none; }
-    #chat-list form input {
-      margin: auto;
-      background: #F5F5F5;
-      border: none;
-      border-bottom: 1px solid grey;
-    }
+
+#chat-list form {
+  border: none;
+}
+
+#chat-list form input {
+  margin: auto;
+  background: #F5F5F5;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: solid 1px rgba( 0, 233, 255, 1.00);
+}
 
 ::-webkit-input-placeholder {
   color: #626262;
@@ -152,6 +167,11 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 20px;
+}
+
+#msg-list {
+  height: 38em;
+  overflow-y: scroll;
 }
 
 .chat {
