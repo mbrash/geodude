@@ -1,9 +1,76 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300);
 
-body {
-  margin: 0;
-  padding: 0;
+html, body {
+  margin: 0px;
+  padding: 0px;
   font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 767px) {
+  .animated {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;    
+  }
+}
+
+.delay1 {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+}
+
+.delay3 {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+}
+
+.delay4 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+
+.delay5 {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+}
+
+.delay6 {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+}
+
+.delay7 {
+  -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+}
+
+.delay8 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+
+.delay9 {
+  -webkit-animation-delay: 2.25s;
+  -moz-animation-delay: 2.25s;
+}
+
+.delay10 {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+}
+
+.note {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
 }
 
 #top-nav {
