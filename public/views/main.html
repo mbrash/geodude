@@ -1,21 +1,21 @@
 <section id="platform">
     <div class="container-fluid">
         <div class="row margin-none">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div id="map"></div>
-            </div>
-            <div class="col-md-3">
                 <div id="chat-list"><!--  ng-controller="ChatCtrl as chat"> -->
-                    <h2 class="text-center">Messages</h2>
-                    <form name="text-entry" ng-submit="main.sendMsg()">
-                        <input type="text" name="new-chat" placeholder="Say something" ng-model="main.newMessage">
-                    </form>
-                    <ul class="timeline" ng-repeat="msg in main.msgs" | reverse> 
-                        <li class="chat timeline-body">
-                            <span class="content timeline-content" href="#" ng-bind="msg.content"></span><br>
-                            <span class="author timeline-content" ng-bind="msg.author"></span>
-                        </li>
-                    </ul>
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2 class="text-center">Messages</h2>
+                        <form name="text-entry" ng-submit="main.sendMsg()">
+                            <input type="text" name="new-chat" placeholder="Say something" ng-model="main.newMessage">
+                        </form>
+                        <ul class="timeline" ng-repeat="msg in main.msgs" | reverse> 
+                            <li class="chat timeline-body">
+                                <span class="content timeline-content" href="#" ng-bind="msg.content"></span><br>
+                                <span class="author timeline-content" ng-bind="msg.author"></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

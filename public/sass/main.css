@@ -182,7 +182,7 @@ html{
 
 #main #chat-btn {
   display: block;
-  margin-top: 2em;
+  margin-top: 0.5em;
   font-size: 32px;
   font-weight: 300;
   text-align: center;
