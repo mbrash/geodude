@@ -1,13 +1,114 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300);
 
-body {
-  margin: 0;
-  padding: 0;
+html, body {
+  margin: 0px;
+  padding: 0px;
   font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
-#top-nav .navbar-brand img {
-  width: 20%;
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 767px) {
+  .animated {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;    
+  }
+}
+
+.delay1 {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+}
+
+.delay3 {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+}
+
+.delay4 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+
+.delay5 {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+}
+
+.delay6 {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+}
+
+.delay7 {
+  -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+}
+
+.delay8 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+
+.delay9 {
+  -webkit-animation-delay: 2.25s;
+  -moz-animation-delay: 2.25s;
+}
+
+.delay10 {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+}
+
+.note {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+}
+
+#top-nav {
+  margin: 0;
+  height: 44px;
+  background: rgba( 255, 255, 255, 0.65);
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 4px rgba( 0, 233, 255, 0.65);
+  border-left: none;
+}
+
+#top-nav .nav a {
+  padding: 6px;
+  margin: 4px;
+  background: transparent;
+  color: rgba( 88, 88, 88, 1.00);
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+  border: solid 1px transparent;
+  -webkit-transition: border 0.25s ease-in-out;
+  -moz-transition: border 0.25s ease-in-out;
+  -o-transition: border 0.25s ease-in-out;
+  transition: border 0.25s ease-in-out;
+}
+
+#top-nav .nav a:hover {
+  color: rgba( 0, 233, 255, 1.00);
+  border: solid 1px rgba( 0, 233, 255, 1.00);
+}
+
+#top-nav .brand img {
+  margin-top: 6px;
+  margin-left: 12px;
+  width: 200px;
+  height: 30px;
 }
 
 #map {
@@ -15,48 +116,23 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  height: 62em;
+  height: 58em;
   width: 100%;
   z-index: -9999 !important;
 }
 
-#main {
-  position: absolute;
-  top: 0;
-  left: 0;
+#platform {
+  position: relative;
+  top: 0 !important;
+  left: 0 !important;
   width: 100%;
-  display: block;
-  z-index: 9999 !important;
 }
 
 #main h1 {
-  display: block;
+  margin-top: 4em;
   background: rgba( 0, 233, 255, 0.55);
   border: none;
   border-radius: 4px;
-  margin: 4em 0 0 0;
-  padding: 12px;
-  line-height: 72px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 64px;
-  color: #fff;
-}
-
-#platform {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-}
-
-#platform h2 {
-  display: block;
-  background: rgba( 0, 233, 255, 0.55);
-  border: none;
-  border-radius: 4px;
-  margin: 4em 0 0 0;
   padding: 6px;
   line-height: 56px;
   font-family: 'Raleway', sans-serif;
@@ -65,7 +141,19 @@ body {
   color: #fff;
 }
 
-#chat-btn {
+#platform h2 {
+  background: rgba( 0, 233, 255, 0.55);
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  line-height: 56px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 54px;
+  color: #fff;
+}
+
+#platform #chat-btn {
   display: block;
   margin-top: 2em;
   font-size: 32px;
@@ -87,7 +175,34 @@ body {
   transition: color 0.25s ease-in-out;
 }
 
-#chat-btn:hover {
+#platform #chat-btn:hover {
+  color: rgba( 0,233,255,1.00);
+  background: transparent;
+}
+
+#main #chat-btn {
+  display: block;
+  margin-top: 2em;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  padding: 12px 18px;
+  background: rgba( 0,233,255,1.00);
+  color: #fff;
+  border-radius: 6px;
+  border: solid 3px rgba( 0,233,255,1.00);
+  text-decoration: none;
+  -webkit-transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -o-transition: background 0.25s ease-in-out;
+  transition: background 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+#main #chat-btn:hover {
   color: rgba( 0,233,255,1.00);
   background: transparent;
 }
@@ -95,36 +210,45 @@ body {
 #chat-list {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
 }
-  #chat-list h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 32px;
-    text-align: center;
-    margin: 1em 0 0 0;
-    padding: 10px;
-    border-bottom: 2px solid grey; }
-  #chat-list ul {
-    padding: 0;
-    margin: 0; }
-  #chat-list input {
-    font-size: 20px;
-    padding: 10px;
-    width: 100%;
-    border-radius: 6px;
-    border: solid 1px rgba( 0, 233, 255, 1.00);
-  }
-  #chat-list img {
-    width: 70%; }
-  #chat-list form {
-    border: none; }
-    #chat-list form input {
-      margin: auto;
-      background: #F5F5F5;
-      border: none;
-      border-bottom: 1px solid grey;
-    }
+
+#chat-list form {
+  border: none;
+}
+
+#chat-list form input {
+  margin: auto;
+  background: #F5F5F5;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: solid 1px rgba( 0, 233, 255, 1.00);
+}
+
+#main {
+  height: 52em;
+  background: url(../img/map.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#main form {
+  margin-top: 4em;
+  border: none;
+}
+
+#main form input {
+  margin: auto;
+  background: #F5F5F5;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: solid 1px rgba( 0, 233, 255, 1.00);
+}
 
 ::-webkit-input-placeholder {
   color: #626262;
@@ -152,6 +276,11 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 20px;
+}
+
+#msg-list {
+  height: 38em;
+  overflow-y: scroll;
 }
 
 .chat {
